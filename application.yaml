@@ -9,8 +9,8 @@ microservice :
   payment_service :
     endpoints :
       endpoint :
-        uri : http://192.168.1.239:6060/payment/doPayment
+        uri : http://192.168.1.239:9091/payment/doPayment
   order_service:
     endpoints:
       endpoint:
-        uri: http://192.168.1.239:6060/order/bookOrder
+        uri: http://192.168.1.239:9091/order/bookOrder
