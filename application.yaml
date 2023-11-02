@@ -1,0 +1,16 @@
+eureka :
+  client :
+    register-with-eureka: true
+    fetch-registry : true
+    service-url :
+      defaultZone : http://localhost:8761/eureka
+
+microservice :
+  payment_service :
+    endpoints :
+      endpoint :
+        uri : http://192.168.1.239:6060/payment/doPayment
+  order_service:
+    endpoints:
+      endpoint:
+        uri: http://192.168.1.239:6060/order/bookOrder
